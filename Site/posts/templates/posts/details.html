@@ -1,0 +1,11 @@
+{% extends 'posts/layout.html' %}
+{% block content %}
+<h3 class="center-align green lighten-3">{{det.title}}</h3>
+<div class="card" style="padding:20px">
+    {{det.body}}
+</div>
+<div class="card-action">
+    {{det.created_at}}
+</div>
+<a href="/posts" class="btn">Go back</a>
+{% endblock %}
